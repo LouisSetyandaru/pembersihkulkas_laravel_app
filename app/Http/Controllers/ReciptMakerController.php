@@ -22,7 +22,7 @@ class ReciptMakerController extends Controller
             $ingredients = implode(', ', $request->ingredients);
 
             // Buat prompt untuk OpenAI
-            $prompt = "Buatkan resep masakan yang menggunakan bahan-bahan berikut: $ingredients. Tuliskan langkah-langkah membuat masakan dari bahan tersebut secara jelas dan detail.";
+            $prompt = "Buatkan resep masakan yang menggunakan bahan-bahan berikut: $ingredients, serta bumbu dapur. Tuliskan langkah-langkah membuat masakan dari bahan tersebut secara jelas dan detail.";
 
             // Simpan pesan user
             $userMessage = ReciptMaker::create([
