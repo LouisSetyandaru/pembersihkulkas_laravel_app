@@ -37,6 +37,10 @@ return [
 
     'openai' => [
         'api_key' => env('OPENAI_API_KEY')
-    ]
+    ],
+
+    'spoonacular' => [
+        'api_key' => env('SPOONACULAR_API_KEY'),
+    ],
 
 ];
